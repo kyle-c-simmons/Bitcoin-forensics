@@ -123,7 +123,7 @@ class graphPage(tk.Frame):									# Graph page, this displays the matplotlib gr
 		plot.set_xlabel('Timestamps')
 		plot.plot(bitcoins)
 		canvas = FigureCanvasTkAgg(fig, self)
-		canvas.show()
+		canvas.draw()
 		canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand = True)
 
 # HelpPage class, this class displays all text on how to work the software
